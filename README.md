@@ -1,4 +1,4 @@
-# 🎓 UIDE Loja - Portal Informativo y Simulador (Sistemas / TICs)
+# UIDE Loja - Portal Informativo y Simulador (Sistemas / TICs)
 
 Este es un proyecto web estático interactivo diseñado para la **Carrera de Ingeniería en Sistemas de Información (Tecnologías de la Información)** de la **Universidad Internacional del Ecuador (UIDE), Sede Loja**.
 
@@ -6,18 +6,18 @@ El portal tiene un enfoque educativo y está optimizado con un diseño de **alto
 
 ---
 
-## 🎯 ¿Para qué sirve esta Aplicación?
+## ¿Para qué sirve esta Aplicación?
 
 El objetivo principal de la aplicación es servir como un recurso de demostración interactivo para el público general, futuros estudiantes y padres de familia interesados en la carrera de TICs. Incluye:
 
-1. **📋 Información de la Carrera**: Resumen del perfil profesional de la carrera, duración, modalidad y datos físicos/contacto de la sede en Loja (sector Jipiro).
-2. **💰 Simulador de Becas Interactivo**: Permite calcular de manera dinámica el porcentaje estimado de beca arancelaria basándose en el promedio de bachillerato y la situación socioeconómica, mostrando el valor proyectado del semestre frente al valor normal.
-3. **✏️ Test Vocacional Express**: Un cuestionario corto de 4 preguntas de opción múltiple para evaluar la afinidad del usuario con el área de programación, lógica e innovación tecnológica.
-4. **📚 Estructura de Materias**: Un desglose interactivo de lo que aprenderá el estudiante a lo largo de los semestres.
+1. **Información de la Carrera**: Resumen del perfil profesional de la carrera, duración, modalidad y datos físicos/contacto de la sede en Loja (sector Jipiro).
+2. **Simulador de Becas Interactivo**: Permite calcular de manera dinámica el porcentaje estimado de beca arancelaria basándose en el promedio de bachillerato y la situación socioeconómica, mostrando el valor proyectado del semestre frente al valor normal.
+3. **Test Vocacional Express**: Un cuestionario corto de 4 preguntas de opción múltiple para evaluar la afinidad del usuario con el área de programación, lógica e innovación tecnológica.
+4. **Estructura de Materias**: Un desglose interactivo de lo que aprenderá el estudiante a lo largo de los semestres.
 
 ---
 
-## 🛠️ Tecnologías Utilizadas
+## Tecnologías Utilizadas
 
 * **React** (v19) - Biblioteca de JavaScript para construir interfaces de usuario.
 * **Vite** (v8) - Herramienta de compilación ultrarrápida para desarrollo frontend.
@@ -25,7 +25,7 @@ El objetivo principal de la aplicación es servir como un recurso de demostraci�
 
 ---
 
-## ⚡ Guía de Instalación y Ejecución Local
+## Guía de Instalación y Ejecución Local
 
 Sigue estos pasos para levantar el entorno de desarrollo en tu computadora local:
 
@@ -50,7 +50,7 @@ La aplicación estará disponible en la URL: **[http://localhost:5173](http://lo
 
 ---
 
-## 🚀 Preparación para Producción y Despliegue
+## Preparación para Producción y Despliegue
 
 Dado que es una aplicación puramente frontend, para subirla a un servidor web de producción (por ejemplo, a tu hosting o servidor en Digital Ocean) debes generar los archivos estáticos listos para producción:
 

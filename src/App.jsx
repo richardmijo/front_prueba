@@ -64,26 +64,26 @@ export default function App() {
     setTestResult(score);
   };
 
-  // Curriculum areas data
+  // Curriculum areas data (no icons or emojis)
   const studyAreas = [
     {
       semesters: 'Semestres 1 a 3',
-      title: '💻 Fundamentos y Programación',
+      title: 'Fundamentos y Programación',
       desc: 'Aprende los lenguajes de programación clave, lógica de sistemas, estructuras de datos y desarrollo web inicial.'
     },
     {
       semesters: 'Semestres 4 a 5',
-      title: '📱 Aplicaciones Móviles y Cloud',
+      title: 'Aplicaciones Móviles y Cloud',
       desc: 'Diseña aplicaciones modernas para teléfonos inteligentes y despliega proyectos dinámicos en servidores de internet.'
     },
     {
       semesters: 'Semestres 6 a 7',
-      title: '🔒 Ciberseguridad y Redes',
+      title: 'Ciberseguridad y Redes',
       desc: 'Protege la información de las organizaciones, configura infraestructuras de red seguras y previene ataques cibernéticos.'
     },
     {
       semesters: 'Semestre 8',
-      title: '🤖 Inteligencia Artificial e Innovación',
+      title: 'Inteligencia Artificial e Innovación',
       desc: 'Explora redes neuronales, automatización de procesos, Big Data y crea tu proyecto de titulación tecnológica.'
     }
   ];
@@ -93,13 +93,9 @@ export default function App() {
       {/* Header */}
       <header className="header">
         <div className="logo-container">
-          <svg style={{ width: 36, height: 36, color: 'var(--primary)' }} fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path strokeLinecap="round" strokeLinejoin="round" d="M12 14l9-5-9-5-9 5 9 5z" />
-            <path strokeLinecap="round" strokeLinejoin="round" d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
-          </svg>
           <div>
             <span className="logo-text-title">UIDE Sede Loja</span>
-            <span className="logo-text-subtitle">Tecnologías de la Información</span>
+            <span className="logo-text-subtitle">Sistemas de Información</span>
           </div>
         </div>
         <span className="tag-campus">Campus Loja</span>
@@ -120,25 +116,25 @@ export default function App() {
           className={`tab-button ${activeTab === 'info' ? 'active' : ''}`}
           onClick={() => setActiveTab('info')}
         >
-          🎓 Conoce la Carrera
+          Conoce la Carrera
         </button>
         <button 
           className={`tab-button ${activeTab === 'beca' ? 'active' : ''}`}
           onClick={() => setActiveTab('beca')}
         >
-          💰 Simulador de Becas
+          Simulador de Becas
         </button>
         <button 
           className={`tab-button ${activeTab === 'test' ? 'active' : ''}`}
           onClick={() => setActiveTab('test')}
         >
-          📋 Test Vocacional
+          Test Vocacional
         </button>
         <button 
           className={`tab-button ${activeTab === 'materias' ? 'active' : ''}`}
           onClick={() => setActiveTab('materias')}
         >
-          📚 ¿Qué aprenderás?
+          ¿Qué aprenderás?
         </button>
       </nav>
 
@@ -152,27 +148,27 @@ export default function App() {
 
           <div className="grid-2">
             <div>
-              <h3 style={{ marginBottom: '0.5rem', color: 'var(--primary)', fontWeight: '700' }}>🎓 Datos de la Carrera</h3>
+              <h3 style={{ marginBottom: '0.5rem', color: 'var(--primary)', fontWeight: '700' }}>Datos de la Carrera</h3>
               <p style={{ marginBottom: '1rem' }}>
-                • <strong>Título:</strong> Ingeniero/a en Sistemas de Información.<br />
-                • <strong>Duración:</strong> 8 Semestres (4 años).<br />
-                • <strong>Modalidad:</strong> Presencial en Loja.<br />
-                • <strong>Enfoque:</strong> Desarrollo de software, innovación cloud y ciberseguridad.
+                • Título: Ingeniero/a en Sistemas de Información.<br />
+                • Duración: 8 Semestres (4 años).<br />
+                • Modalidad: Presencial en Loja.<br />
+                • Enfoque: Desarrollo de software, innovación cloud y ciberseguridad.
               </p>
 
-              <h3 style={{ marginBottom: '0.5rem', color: 'var(--primary)', fontWeight: '700' }}>📍 Ubicación y Contacto</h3>
+              <h3 style={{ marginBottom: '0.5rem', color: 'var(--primary)', fontWeight: '700' }}>Ubicación y Contacto</h3>
               <p style={{ fontSize: '0.95rem', color: 'var(--text-muted)' }}>
-                📍 Calle Agustín Carrión Palacios entre Av. Salvador Bustamante Celi y Beethoven, Sector Jipiro (Loja).<br />
-                📞 <strong>Admisiones:</strong> 095 970 0248 / 07-2612419.
+                Dirección: Calle Agustín Carrión Palacios entre Av. Salvador Bustamante Celi y Beethoven, Sector Jipiro (Loja).<br />
+                Teléfonos: 095 970 0248 / 07-2612419.
               </p>
             </div>
 
             <div style={{ background: '#f8fafc', padding: '1.5rem', borderRadius: '10px', border: '1px solid var(--border)' }}>
-              <h3 style={{ marginBottom: '0.75rem', color: 'var(--primary)', fontWeight: '700' }}>✨ ¿Por qué elegir la UIDE?</h3>
+              <h3 style={{ marginBottom: '0.75rem', color: 'var(--primary)', fontWeight: '700' }}>¿Por qué elegir la UIDE?</h3>
               <p style={{ fontSize: '0.95rem', lineHeight: '1.6' }}>
-                • <strong>Prácticas Reales:</strong> Acceso a laboratorios de última generación para diseño de redes y bases de datos.<br />
-                • <strong>Malla Moderna:</strong> Adaptada a los estándares de la industria tecnológica internacional (inteligencia artificial, cloud computing y desarrollo móvil).<br />
-                • <strong>Convenios:</strong> Oportunidad de certificaciones y programas de intercambio estudiantil global.
+                • Prácticas Reales: Acceso a laboratorios de última generación para diseño de redes y bases de datos.<br />
+                • Malla Moderna: Adaptada a los estándares de la industria tecnológica internacional (inteligencia artificial, cloud computing y desarrollo móvil).<br />
+                • Convenios: Oportunidad de certificaciones y programas de intercambio estudiantil global.
               </p>
             </div>
           </div>
@@ -184,7 +180,7 @@ export default function App() {
         <div className="content-card">
           <h2 className="section-title">Simulador de Beca UIDE</h2>
           <p className="section-intro">
-            Obtén un estimado del porcentaje de descuento en tu matrícula mensual y semestral según tu desempeño académico de bachillerato.
+            Obtén un estimado del porcentaje de descuento en tu matrícula mensual y semestral según tu promedio académico de bachillerato.
           </p>
 
           <div className="grid-2">
@@ -270,7 +266,7 @@ export default function App() {
         <div className="content-card">
           <h2 className="section-title">Test Vocacional Express</h2>
           <p className="section-intro">
-            Responde estas sencillas preguntas para saber si tu perfil se alinea con la Ingeniería en Sistemas y TICs de la UIDE.
+            Responde estas sencillas preguntas para saber si tu perfil se alinea con la Ingeniería en Sistemas de la UIDE.
           </p>
 
           <form onSubmit={handleTestSubmit}>
@@ -411,9 +407,9 @@ export default function App() {
               </h3>
               <p style={{ fontSize: '1.05rem', color: 'var(--text-main)', lineHeight: '1.6' }}>
                 {testResult >= 75 ? (
-                  <strong>🎉 ¡Excelente perfil! Tienes una alta afinidad con el desarrollo de software y las TICs. La carrera de Sistemas de Información en la UIDE Loja es la opción perfecta para potenciar tu creatividad e ingenio.</strong>
+                  <strong>¡Excelente perfil! Tienes una alta afinidad con el desarrollo de software y las TICs. La carrera de Sistemas de Información en la UIDE Loja es la opción perfecta para potenciar tu creatividad e ingenio.</strong>
                 ) : testResult >= 50 ? (
-                  <strong>👍 Tienes un perfil balanceado. La informática y la resolución de problemas lógicos te atraen. Sería una gran oportunidad para aprender bases sólidas y convertirte en programador.</strong>
+                  <strong>Tienes un perfil balanceado. La informática y la resolución de problemas lógicos te atraen. Sería una gran oportunidad para aprender bases sólidas y convertirte en programador.</strong>
                 ) : (
                   <strong>Puedes desarrollar habilidades tecnológicas durante la carrera si te propones aprender desde cero. ¡En la UIDE te enseñamos desde las bases fundamentales!</strong>
                 )}
@@ -442,14 +438,14 @@ export default function App() {
           </div>
 
           <div className="info-banner" style={{ marginTop: '2rem' }}>
-            🎓 <strong>Nota sobre laboratorios y proyectos:</strong> En cada bloque de estudios realizarás proyectos integradores donde pondrás en práctica tus conocimientos en servidores reales de prueba, bases de datos remotas y despliegues estáticos.
+            Nota sobre laboratorios y proyectos: En cada bloque de estudios realizarás proyectos integradores donde pondrás en práctica tus conocimientos en servidores de prueba, bases de datos y desarrollo de aplicaciones reales.
           </div>
         </div>
       )}
 
       {/* Footer */}
       <footer className="footer">
-        <p>© 2026 Universidad Internacional del Ecuador - Sede Loja. Carrera de Sistemas de Información / TICs.</p>
+        <p>© 2026 Universidad Internacional del Ecuador - Sede Loja. Carrera de Sistemas de Información.</p>
         <p style={{ marginTop: '0.5rem', fontSize: '0.85rem' }}>
           Calle Agustín Carrión Palacios entre Av. Salvador Bustamante Celi y Beethoven, Sector Jipiro.
         </p>
